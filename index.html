@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DharmaSutra Multispecialty Hospital - Trusted Healthcare Excellence</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="logo">
+        <i class="fas fa-om"></i>
+        <div class="logo-text">
+          <div class="logo-name">DharmaSutra</div>
+          <div class="logo-tagline">Healing with Ethics and Excellence</div>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#trust">About</a></li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="login-btn" onclick="openLoginModal()">
+        <i class="fas fa-sign-in-alt"></i> Patient Portal
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>DharmaSutra Multispecialty Hospital</h1>
+          <p class="hero-tagline">Your Trusted Healthcare Partner</p>
+          <p class="hero-description">
+            Experience world-class healthcare with cutting-edge technology, compassionate care, and ethical medical practices. We are committed to your wellness journey with 24/7 emergency services and specialized treatments.
+          </p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary" onclick="quickAppointment()">
+              <i class="fas fa-calendar-check"></i> Book Appointment Now
+            </a>
+            <a href="#departments" class="btn btn-secondary">
+              <i class="fas fa-hospital"></i> Our Specialties
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Badges Section -->
+    <section id="trust" class="trust-badges">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-item">
+            <i class="fas fa-shield-alt"></i>
+            <h4>NABH Accredited</h4>
+            <p>Quality healthcare certified</p>
+          </div>
+          <div class="trust-item">
+            <i class="fas fa-user-md"></i>
+            <h4>Expert Doctors</h4>
+            <p>50+ specialist physicians</p>
+          </div>
+          <div class="trust-item">
+            <i class="fas fa-clock"></i>
+            <h4>24/7 Emergency</h4>
+            <p>Round-the-clock care</p>
+          </div>
+          <div class="trust-item">
+            <i class="fas fa-microscope"></i>
+            <h4>Advanced Technology</h4>
+            <p>State-of-the-art equipment</p>
+          </div>
+          <div class="trust-item">
+            <i class="fas fa-heart"></i>
+            <h4>Patient First</h4>
+            <p>Compassionate care always</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">25+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100K+</div>
+            <div class="stat-label">Happy Patients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Expert Doctors</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15</div>
+            <div class="stat-label">Specialties</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Beds Available</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="departments" id="departments">
+      <div class="container">
+        <h2 class="section-title">Specialized Departments</h2>
+        <p class="section-subtitle">Comprehensive healthcare services across multiple specialties</p>
+        <div class="departments-grid">
+          <button class="department-card" onclick="openDepartment('Cardiology')">
+            <div class="department-icon"><i class="fas fa-heartbeat"></i></div>
+            <h3>Cardiology</h3>
+            <p>Advanced cardiac care with latest technology</p>
+          </button>
+          <button class="department-card" onclick="openDepartment('Neurology')">
+            <div class="department-icon"><i class="fas fa-brain"></i></div>
+            <h3>Neurology</h3>
+            <p>Comprehensive brain & nervous system care</p>
+          </button>
+          <button class="department-card" onclick="openDepartment('Orthopedics')">
+            <div class="department-icon"><i class="fas fa-bone"></i></div>
+            <h3>Orthopedics</h3>
+            <p>Expert bone, joint & spine treatments</p>
+          </button>
+          <button class="department-card" onclick="openDepartment('Emergency')">
+            <div class="department-icon"><i class="fas fa-ambulance"></i></div>
+            <h3>Emergency Care</h3>
+            <p>24/7 critical & trauma services</p>
+          </button>
+          <button class="department-card" onclick="openDepartment('Pediatrics')">
+            <div class="department-icon"><i class="fas fa-baby"></i></div>
+            <h3>Pediatrics</h3>
+            <p>Specialized child healthcare services</p>
+          </button>
+          <button class="department-card" onclick="openDepartment('Lab')">
+            <div class="department-icon"><i class="fas fa-microscope"></i></div>
+            <h3>Diagnostics</h3>
+            <p>Advanced lab & imaging services</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <h2 class="section-title">Quick Services</h2>
+        <p class="section-subtitle">Fast and convenient healthcare services at your fingertips</p>
+        <div class="services-grid">
+          <div class="service-card" onclick="quickAppointment()">
+            <i class="fas fa-calendar-plus"></i>
+            <h3>Book Appointment</h3>
+            <p>Schedule instantly with our specialists</p>
+          </div>
+          <div class="service-card" onclick="checkBeds()">
+            <i class="fas fa-bed"></i>
+            <h3>Bed Availability</h3>
+            <p>Real-time bed status & admission</p>
+          </div>
+          <div class="service-card" onclick="viewBills()">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <h3>Bill & Insurance</h3>
+            <p>Transparent pricing & insurance support</p>
+          </div>
+          <div class="service-card" onclick="emergencyContact()">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Emergency Hotline</h3>
+            <p>24/7 immediate medical assistance</p>
+          </div>
+          <div class="service-card" onclick="labReports()">
+            <i class="fas fa-file-medical"></i>
+            <h3>Lab Reports</h3>
+            <p>Online access to test results</p>
+          </div>
+          <div class="service-card" onclick="telemedicine()">
+            <i class="fas fa-video"></i>
+            <h3>Telemedicine</h3>
+            <p>Consult doctors from home</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  <div id="loginModal" class="login-modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeLoginModal()">&times;</button>
+      <h2 class="modal-title"><i class="fas fa-user-lock"></i> Patient Portal Login</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Patient ID / Email" required />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" required />
+        </div>
+        <button class="btn btn-primary" type="submit">Login to Portal</button>
+        <p style="text-align:center; margin-top:1rem">
+          New Patient? <a href="#" onclick="openSignupModal()" style="color: #00c853; font-weight: 600;">Register Here</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <div id="signupModal" class="login-modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeSignupModal()">&times;</button>
+      <h2 class="modal-title"><i class="fas fa-user-plus"></i> Patient Registration</h2>
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Full Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Phone Number" required />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Create Password" required />
+        </div>
+        <button class="btn btn-primary" type="submit">Register as Patient</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="appointmentModal" class="login-modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeAppointmentModal()">&times;</button>
+      <h2 class="modal-title"><i class="fas fa-calendar-check"></i> Book Your Appointment</h2>
+      <form>
+        <div class="form-group">
+          <select required>
+            <option value="">Select Department</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+            <option>Emergency</option>
+            <option>General Medicine</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select required>
+            <option value="">Preferred Doctor</option>
+            <option>Dr. Amit Sharma - Cardiologist</option>
+            <option>Dr. Priya Patel - Neurologist</option>
+            <option>Dr. Rajesh Kumar - Orthopedic</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="date" required />
+        </div>
+        <div class="form-group">
+          <input type="time" required />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Patient Name" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Contact Number" required />
+        </div>
+        <div class="form-group">
+          <textarea rows="3" placeholder="Symptoms / Reason for Visit"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Confirm Appointment</button>
+      </form>
+    </div>
+  </div>
+ <script src="scripts/script.js"></script>
+</body>
+</html>
